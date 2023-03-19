@@ -1,0 +1,533 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+body {
+    /* background-color: #013a4b; */
+    /* background: #2784a9; */
+    background-color: darkslategrey;
+    min-height: 100vh;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+
+    top: 0;
+    Left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 20px 100px;
+    z-index: 100000;
+    background-color: darkslategrey;
+    /* border-bottom: 1px solid  white; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+header .logo {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.6s;
+
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    List-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    text-decoration: none;
+    color: #fff;
+    Letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+}
+
+.banner>img {
+    width: 100%;
+    position: relative;
+}
+
+.theme {
+    margin-left: 7%;
+    margin-top: 5%;
+    display: flex;
+    gap: 5%;
+    border: 1px solid yellowgreen;
+    padding: 1%;
+    width: 20%;
+}
+
+.theme>div:nth-child(1) {
+    margin-top: 1.2%;
+}
+
+.theme>div:nth-child(2) {
+    display: flex;
+    gap: 50%;
+}
+
+.theme>div:nth-child(2)>p {
+    background-color: cadetblue;
+    padding: 5% 8% 5% 8%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.about {
+    margin: auto;
+    margin-top: 5%;
+    display: grid;
+    gap: 5%;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 7%;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.about>div {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10%;
+    border-radius: 5%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.about>div:nth-child(1)>img {
+    width: 100%;
+    border-radius: 5%;
+    border: 2px solid navy;
+
+}
+
+.aboutme {
+    margin-top: 5%;
+    margin-left: 5%;
+    text-transform: initial;
+    color: #fad201;
+
+}
+
+.underline {
+
+    height: 3px;
+    width: 10%;
+    margin-left: 5%;
+
+}
+
+.about>div>h1 {
+    margin-bottom: 1%;
+    margin-top: 2%;
+    color: #fad201;
+}
+
+.about>div>p,
+.about>div>h3 {
+    margin-bottom: 1%;
+    margin-top: 2%;
+    width: 100%;
+    line-height: 23px;
+
+}
+
+.icon {
+    display: flex;
+    gap: 15%;
+    margin-top: 35%;
+    margin-bottom: 5%;
+}
+
+.icon>a>i {
+    color: black;
+    font-size: 30px;
+}
+
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* border: 1px solid white; */
+    gap: 5%;
+    margin-top: 5%;
+    margin-left: 7%;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.skills>div {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5%;
+    width: auto;
+    height: auto;
+    padding: 10%;
+}
+
+
+
+.tech-skills>div,
+.Communicating-skills>div,
+.costumer-skills>div {
+    display: flex;
+    gap: 5%;
+    padding: 2%;
+    border-bottom: 1px solid rgb(171, 159, 159);
+}
+
+.tech-skills>div>img,
+.Communicating-skills>div>img,
+.costumer-skills>div>img {
+    width: 10%;
+
+}
+
+.tech-skills>div>p,
+.Communicating-skills>div>p,
+.costumer-skills>div>p {
+    margin-top: 2%;
+}
+
+.tech-skills>h2,
+.Communicating-skills>h2,
+.costumer-skills>h2 {
+    text-align: center;
+    color: #fad201;
+    margin-bottom: 5%;
+    text-decoration: underline;
+}
+
+.project {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* border: 1px solid white; */
+    margin-top: 5%;
+    margin-left: 7%;
+    text-align: center;
+    gap: 5%;
+
+}
+
+.project>div {
+    border-radius: 2% 25% 2% 25%;
+    padding: 5%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.project>.project-1>img {
+    width: 100%;
+    margin-bottom: 5%;
+    border-radius: 2% 25% 2% 25%;
+}
+
+
+.project>.project-1>div>button,
+button {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 10rem;
+    background-color: rgb(193, 166, 219);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin-top: 5%;
+    border: 1px solid black;
+}
+
+.project>.project-1>div>button:hover,
+button:hover {
+    color: black;
+}
+
+.project>.project-1>div>button::after,
+button::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(147, 159, 31);
+    z-index: -1;
+    border-radius: 10rem;
+    transition: 0.3s ease all;
+    transform: scale(0, 1);
+    transform-origin: bottom right;
+    transition: transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
+    transition-timing-function:
+        cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.project>.project-1>div>button:hover::after,
+button:hover::after {
+    transform: scale(1, 1);
+    transform-origin: top left;
+}
+
+.project-1>div>button>a {
+    text-decoration: none;
+}
+
+.project>.project-1>div>p {
+    text-align: left;
+    margin-top: 5%;
+    font-size: 12px;
+}
+
+.project>.project-1>div>p>b {
+    font-size: 14px;
+}
+
+.project>.project-1>div>h3 {
+    color: #fad201;
+
+}
+
+.resume {
+    margin-left: 11%;
+    margin-top: 0%;
+
+}
+
+.contact {
+    margin-left: 7%;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* border: 1px solid blue; */
+    height: auto;
+}
+
+.contact>div:nth-child(2) {
+    width: 60%;
+    margin-left: 10%;
+}
+
+.contact>div {
+    /* border: 1px solid yellow; */
+    padding: 3%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.contact>form>div>input {
+    height: 10%;
+    width: 100%;
+    padding: 3%;
+    margin-bottom: 2%;
+    border: 2px solid navy;
+    border-radius: 1%;
+    color: #000;
+}
+
+.contact>form>div>textarea {
+    height: 50%;
+    width: 100%;
+    padding: 3%;
+    border: 2px solid navy;
+    border-radius: 1%;
+    color: black;
+
+}
+
+#submit {
+    height: 15%;
+    width: 100%;
+    padding: 3%;
+    margin-bottom: 10%;
+    background-color: rgb(112, 112, 233);
+}
+
+.contact>div:nth-child(2)>div>p {
+    margin-bottom: 5%;
+
+}
+
+.contact>div:nth-child(2)>h2 {
+    margin-bottom: 5%;
+    color: #fad201;
+}
+
+.footer {
+    margin: auto;
+    width: 100%;
+    background-color: gray;
+}
+
+.footer>div {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: auto;
+    padding: 2%;
+    text-align: center;
+}
+
+.footer>div>p {
+    margin-top: 5%;
+}
+
+
+
+.pTag {
+    visibility: hidden;
+    width: 7%;
+    padding: 5px;
+    background-color: #000;
+    color: white;
+    border-radius: 5px;
+    margin-left: 14%;
+    margin-top: -3%;
+    position: absolute;
+}
+
+
+/* for medium screen size i.e tablets  */
+@media all and (min-width:481px) and (max-width:761px) {
+    header ul {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    header ul li {
+        List-style: square;
+    }
+
+    .theme {
+        width: 55%;
+    }
+
+
+
+    .about {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 15%;
+    }
+
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 15%;
+    }
+
+    .project {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 15%;
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
+
+/* for small screen  */
+@media all and (min-width:80px) and (max-width:480px) {
+    header ul {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+    }
+
+    header .logo {
+       
+        display: none;
+
+    }
+
+    .banner {
+        position: relative;
+        width: 100%;
+        margin-top: 8%;
+    }
+
+    .banner>img {
+        margin-top: 8%;
+        width: 100%;
+        position: relative;
+    }
+
+    header ul li {
+        List-style: square;
+        text-align: center;
+    }
+
+    .theme {
+        width: 80%;
+        border: none;
+    }
+
+    .about {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 45%;
+
+    }
+
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 45%;
+    }
+
+    .project {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 85%;
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+}
